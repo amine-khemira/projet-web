@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanat</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--owlcarousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 color-primaryalt-bg">
+            <div class="font-Nanum font-size-12 .float-right">
+                <a href="#"><button type="button" class="btn color-primary-bg text-white"><span><i class="fa-solid text-white fa-user"></i></span> Log in</button></a>
+                <a href="#"><button type="button" class="btn color-primary-bg text-white"><span><i class="fa-solid text-white fa-user-plus"></i></span> Sign up</button></a>
+            </div>
+        </div>
+        <!--primary nav-->
+        <nav class="navbar navbar-expand-lg navbar-dark color-primary-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand p-0 font-size-24 font-Abril" href="#">Artisanat</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto font-Serif font-size-18">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Artisans </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Boutique
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Produit cosmétique</a></li>
+                      <li><a class="dropdown-item" href="#">Décoration</a></li>
+                      <li><a class="dropdown-item" href="#">Bijoux</a></li>
+                      <li><a class="dropdown-item" href="#">Produit du tiroire</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Catalogue</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                  </li>
+                  
+                </ul>
+                <form action="#" class="font-size-14 font-Roboto">
+                    <a href="#" class="py-2 rounded-pill color-primaryalt-bg">
+                        <span class="font-size-18 px-2 text-white"><i class="fa-solid fa-basket-shopping"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                    </a>
+                </form>
+               
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--main-->
+    <main id="main-site">
+        <div class="color-secondalt-bg">
+            <section class="container" >
+                <nav class="navbar navbar-light color-secondalt-bg">
+                    <div class="container-fluid">
+                      <form>
+                          <div class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-light" type="submit">Search</button>
+                          </div>
+                        <div id="filters" class="button-group mt-3">
+                            <button class="btn text-white" data-filter="*">Tous</button>
+                            <button class="btn text-white" data-filter=".bijoux">bijoux</button>
+                            <button class="btn text-white" data-filter=".terroir">terroir</button>
+                            <button class="btn text-white" data-filter=".décoration">décoration</button>
+                            <button class="btn text-white" data-filter=".cosmétique">cosmétique</button>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+               </section>     
+        </div>
+      <section id="catalogue">
+          <div class="container p-2">
+              <div class="grid">
+                  <div class="grid-item bijoux border">
+                    <div class="item" style="width: 200px;">
+                        <div class="product font-Roboto">
+                            <a href="colierzohra.html"><img src="./assets/product/Collier-Zohra-6.jpg" alt="product1" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h5>Collier Zohra</h5>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>149</span>DT
+                                </div>
+                                <button type="submit" class="btn color-primaryalt-bg font-size-14 text-white font-Roboto">Ajouter au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="grid-item décoration border">
+                    <div class="item" style="width: 200px;">
+                        <div class="product font-Roboto">
+                            <a href=""><img src="./assets/product/table-basse-fer-forge-et-bois-de-palmier-basma.jpg" alt="product2" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h5>table fer forgé</h5>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>149</span>DT
+                                </div>
+                                <button type="submit" class="btn color-primaryalt-bg font-size-14 text-white font-Roboto">Ajouter au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="grid-item cosmétique border">
+                    <div class="item" style="width: 200px;">
+                        <div class="product font-Roboto">
+                            <a href=""><img src="./assets/product/body-scrub.jpg" alt="product2" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h5>body scrub</h5>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>149</span>DT
+                                </div>
+                                <button type="submit" class="btn color-primaryalt-bg font-size-14 text-white font-Roboto">Ajouter au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="grid-item décoration border">
+                    <div class="item" style="width: 200px;">
+                        <div class="product font-Roboto">
+                            <a href=""><img src="./assets/product/table-basse-fer-forge-et-bois-de-palmier-basma.jpg" alt="product2" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h5>table fer forgé</h5>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>149</span>DT
+                                </div>
+                                <button type="submit" class="btn color-primaryalt-bg font-size-14 text-white font-Roboto">Ajouter au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+ 
+    </main>
+
+    <footer id="footer" class="color-primary-bg text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h3 class="font-Abril">Artisanat</h3>
+                    <p class="font-size-14 font-Roboto text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat, ante ac viverra efficitur, sapien ipsum lobortis nisl, vel tempor ante nunc vitae turpis. In elementum, enim in accumsan rutrum, arcu augue vestibulum augue, at dictum tortor orci eget est. Duis scelerisque justo quam, eu laoreet justo placerat in</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h3 class="font-Serif">Newsletter</h3>
+                    <form class="form-row d-flex">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email *">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn color-primaryalt-bg text-white mx-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h3 class="font-Abril">Artisanat</h3>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-Roboto font-size-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="font-Roboto font-size-14 text-white-50 pb-1">mentions légales</a>
+                        <a href="#" class="font-Roboto font-size-14 text-white-50 pb-1">devenir vendeur</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h3 class="font-Abril">Compte</h3>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-Roboto font-size-14 text-white-50 pb-1">Mon compte</a>
+                        <a href="#" class="font-Roboto font-size-14 text-white-50 pb-1">Historique d'achat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <!--bootstrap-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
+    <!--ownl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--isotop-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--js-->
+    <script src="./index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Lora&family=Nanum+Gothic&family=Roboto:wght@300&display=swap");
+/* sass template */
+button, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.font-Lora {
+    font-family: "Lora", cursive;
+}
+
+.font-Namun {
+    font-family: "Namum Gothic", cursive;
+}
+
+.font-Serif {
+    font-family: "DM Serif Display", cursive;
+}
+
+.font-Roboto {
+    font-family: "Roboto", cursive;
+}
+
+.font-Abril {
+    font-family: "Abril Fatface", cursive;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.color-primary {
+    color: #be6b5b;
+}
+
+.color-second {
+    color: #45818e;
+}
+
+.color-primaryalt {
+    color: #dc8168;
+}
+
+.color-secondalt {
+    color: #76afa4;
+}
+
+.color-third {
+    color: #e5d0ba;
+}
+
+.color-primary-bg {
+    background: #be6b5b;
+}
+
+.color-second-bg {
+    background: #45818e;
+}
+
+.color-primaryalt-bg {
+    background: #dc8168;
+}
+
+.color-secondalt-bg {
+    background: #76afa4;
+}
+
+.color-third-bg {
+    background: #e5d0ba;
+}
+
+#top-sale .owl-carousel .item .product a {
+    overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+    transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img :hover {
+    transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+    color: #be6b5b;
+    margin-left: -4rem;
+    padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: #be6b5b;
+    margin-right: -4rem;
+    padding: 0 1rem;
+}
+#voir :hover{
+    opacity: 1;
+}
+
+
+/*# sourceMappingURL=style.css.map */
